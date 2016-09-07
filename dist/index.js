@@ -24,7 +24,7 @@ var ProgressCircularGradiented = function (_React$Component) {
   function ProgressCircularGradiented() {
     _classCallCheck(this, ProgressCircularGradiented);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ProgressCircularGradiented).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ProgressCircularGradiented.__proto__ || Object.getPrototypeOf(ProgressCircularGradiented)).apply(this, arguments));
   }
 
   _createClass(ProgressCircularGradiented, [{
@@ -198,6 +198,7 @@ var ProgressCircularGradiented = function (_React$Component) {
       var strokeWidth = _props4.strokeWidth;
       var width = _props4.width;
       var colorEmpty = _props4.colorEmpty;
+      var colorFill = _props4.colorFill;
       var colorStart = _props4.colorStart;
       var colorEnd = _props4.colorEnd;
       var height = width;
@@ -237,7 +238,7 @@ var ProgressCircularGradiented = function (_React$Component) {
         ),
         _react2.default.createElement('path', {
           d: path,
-          fill: 'transparent',
+          fill: colorFill,
           stroke: colorEmpty,
           strokeDasharray: strokeDasharray,
           strokeLinecap: strokeLinecap,
@@ -263,6 +264,7 @@ var ProgressCircularGradiented = function (_React$Component) {
 ProgressCircularGradiented.propTypes = {
   colorEmpty: _react2.default.PropTypes.string,
   colorEnd: _react2.default.PropTypes.string,
+  colorFill: _react2.default.PropTypes.string,
   colorStart: _react2.default.PropTypes.string,
   percentage: _react2.default.PropTypes.number,
   strokeLinecap: _react2.default.PropTypes.string,
@@ -272,6 +274,7 @@ ProgressCircularGradiented.propTypes = {
 ProgressCircularGradiented.defaultProps = {
   colorEmpty: '#37354F',
   colorEnd: '#FADB4D',
+  colorFill: 'transparent',
   colorStart: '#E64D59',
   percentage: 0,
   strokeLinecap: 'round',

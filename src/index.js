@@ -4,6 +4,7 @@ class ProgressCircularGradiented extends React.Component {
   static propTypes = {
     colorEmpty: React.PropTypes.string,
     colorEnd: React.PropTypes.string,
+    colorFill: React.PropTypes.string,
     colorStart: React.PropTypes.string,
     percentage: React.PropTypes.number,
     strokeLinecap: React.PropTypes.string,
@@ -14,6 +15,7 @@ class ProgressCircularGradiented extends React.Component {
   static defaultProps = {
     colorEmpty: '#37354F',
     colorEnd: '#FADB4D',
+    colorFill: 'transparent',
     colorStart: '#E64D59',
     percentage: 0,
     strokeLinecap: 'round',
@@ -166,7 +168,7 @@ class ProgressCircularGradiented extends React.Component {
   }
 
   render() {
-    const { strokeLinecap, strokeWidth,  width, colorEmpty, colorStart, colorEnd } = this.props,
+    const { strokeLinecap, strokeWidth, width, colorEmpty, colorFill, colorStart, colorEnd } = this.props,
       height = width,
       pathes = this.calculateCircularPathes(width / 2, height / 2, (width - strokeWidth) / 2).pathes,
       path = this.calculateCircularPathes(width / 2, height / 2, (width - strokeWidth) / 2).path,
@@ -198,7 +200,7 @@ class ProgressCircularGradiented extends React.Component {
 
         <path
           d={path}
-          fill="transparent"
+          fill={colorFill}
           stroke={colorEmpty}
           strokeDasharray={strokeDasharray}
           strokeLinecap={strokeLinecap}
