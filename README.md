@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/progress-circle-gradient.svg)](https://badge.fury.io/js/progress-circle-gradient)
+
 # circular-progress-angular-gradient
 
 ![Samples](/sample.gif?raw=true "Samples")
