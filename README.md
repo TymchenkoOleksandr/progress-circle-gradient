@@ -35,7 +35,8 @@ paste following styles into your project styles for progress animation:
 
 ### Properties
 
-* 'colorEmpty': Color of the empty part of progress-bar. String with hex color code. For example - '#37354F',
+* 'colorEmpty': Color of the empty part of progress-bar. String with hex color code or 'transparent'. For example - '#37354F',
+* 'colorFill': Color of the progress inner part filling. String with hex color code or 'transparent'. For example - '#FADB4D',
 * 'colorEnd': Color of the gradient end. String with hex color code. For example - '#FADB4D',
 * 'colorStart': Color of the gradient start. String with hex color code. For example - '#E64D59',
 * 'percentage': Percentage of progress-bar filling. Float, from 0 to 1. For example - 0.3,
@@ -49,6 +50,7 @@ paste following styles into your project styles for progress animation:
 ```jsx
 <Progress
   colorEmpty: '#37354F',
+  colorFill: '#FFFFFF',
   colorEnd: '#FADB4D',
   colorStart: '#E64D59',
   percentage: {0.4},

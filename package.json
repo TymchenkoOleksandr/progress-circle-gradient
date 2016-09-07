@@ -1,6 +1,6 @@
 {
   "name": "progress-circle-gradient",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "configurable circular progressbar with angular gradient react component",
   "main": "dist/index.js",
   "scripts": {
